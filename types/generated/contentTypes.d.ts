@@ -374,13 +374,22 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
-    name: Attribute.String;
-    address: Attribute.Text;
+    name: Attribute.String & Attribute.Required;
+    address: Attribute.Text & Attribute.Required;
+    pincode: Attribute.Integer & Attribute.Required;
+    city: Attribute.String & Attribute.Required;
+    state: Attribute.String & Attribute.Required;
+    country: Attribute.String & Attribute.Required;
     rating: Attribute.Decimal;
     images: Attribute.Media;
-    isAvailable: Attribute.Boolean;
-    amenities: Attribute.JSON;
-    pincode: Attribute.Integer;
+    isAvailable: Attribute.Boolean & Attribute.DefaultTo<true>;
+    amenities: Attribute.JSON &
+      Attribute.DefaultTo<{
+        Parking: {
+          enabled: 'true';
+        };
+      }>;
+    description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -651,7 +660,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.role'
     >;
-    phoneNumber: Attribute.String & Attribute.Required;
+    phoneNumber: Attribute.String & Attribute.Required & Attribute.Unique;
     firstName: Attribute.String & Attribute.Required;
     lastName: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;

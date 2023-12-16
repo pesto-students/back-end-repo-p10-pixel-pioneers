@@ -13,10 +13,28 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "address": {
-      "type": "text"
+      "type": "text",
+      "required": true
+    },
+    "pincode": {
+      "type": "integer",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
     },
     "rating": {
       "type": "decimal"
@@ -33,13 +51,19 @@
       ]
     },
     "isAvailable": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "amenities": {
-      "type": "json"
+      "type": "json",
+      "default":{
+        "Parking":{
+          "enabled":"true"
+        }
+      }
     },
-    "pincode": {
-      "type": "integer"
+    "description": {
+      "type": "text"
     }
   }
 }
