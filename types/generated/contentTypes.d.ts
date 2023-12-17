@@ -390,6 +390,13 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
         };
       }>;
     description: Attribute.Text;
+    ownedBy: Attribute.String;
+    workSpace: Attribute.JSON &
+      Attribute.DefaultTo<{
+        available: 0;
+        total: 0;
+        cost: 0;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

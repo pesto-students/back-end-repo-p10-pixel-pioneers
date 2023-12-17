@@ -56,14 +56,25 @@
     },
     "amenities": {
       "type": "json",
-      "default":{
-        "Parking":{
-          "enabled":"true"
+      "default": {
+        "Parking": {
+          "enabled": "true"
         }
       }
     },
     "description": {
       "type": "text"
+    },
+    "ownedBy": {
+      "type": "string"
+    },
+    "workSpace": {
+      "type": "json",
+      "default":{
+        "available": 0,
+        "total":0,
+        "cost":0
+      }
     }
   }
 }
