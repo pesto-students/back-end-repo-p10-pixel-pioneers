@@ -70,11 +70,14 @@
     },
     "workSpace": {
       "type": "json",
-      "default":{
+      "default": {
         "available": 0,
-        "total":0,
-        "cost":0
+        "total": 0,
+        "cost": 0
       }
+    },
+    "cost": {
+      "type": "integer"
     }
   }
 }

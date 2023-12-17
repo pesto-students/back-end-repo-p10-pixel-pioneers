@@ -397,6 +397,7 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
         total: 0;
         cost: 0;
       }>;
+    cost: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
