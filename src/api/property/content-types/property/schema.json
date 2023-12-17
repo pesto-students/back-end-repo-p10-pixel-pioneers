@@ -58,7 +58,52 @@
       "type": "json",
       "default": {
         "Parking": {
-          "enabled": "true"
+          "enabled": true
+        },
+        "Printing": {
+          "enabled": true
+        },
+        "IT services": {
+          "enabled": true
+        },
+        "Server rooms": {
+          "enabled": true
+        },
+        "24/7 security": {
+          "enabled": true
+        },
+        "Mail and package handling": {
+          "enabled": true
+        },
+        "Onsite staff": {
+          "enabled": true
+        },
+        "Cleaning services": {
+          "enabled": true
+        },
+        "Phone booths": {
+          "enabled": true
+        },
+        "Conference rooms": {
+          "enabled": true
+        },
+        "Pantry": {
+          "enabled": true
+        },
+        "Event spaces": {
+          "enabled": true
+        },
+        "Professional and social events":{
+          "enabled": true
+        },
+        "Enhanced cleaning services":{
+          "enabled": true
+        },
+        "Hand sanitizers": {
+          "enabled": true
+        },
+        "Enhanced HVAC standards": {
+          "enabled": true
         }
       }
     },
