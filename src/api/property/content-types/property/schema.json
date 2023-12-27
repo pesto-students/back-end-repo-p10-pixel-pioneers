@@ -123,6 +123,9 @@
     },
     "cost": {
       "type": "integer"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
