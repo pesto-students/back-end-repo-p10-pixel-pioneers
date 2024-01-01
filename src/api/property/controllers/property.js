@@ -23,6 +23,7 @@ module.exports = createCoreController('api::property.property', ({strapi}) =>({
        }
        } catch (error) {
         console.error(error);
+        console.dir(error, {depth:5})
         ctx.body={
             success: false,
             message:"Failed to add Property"
