@@ -33,6 +33,15 @@ module.exports = {
             config:{
                 auth: false
             }
-        }
+        },
+        {
+            method: "GET",
+            path:"/properties/owner/:id",
+            handler:"property.getPropertyListUser",
+            config:{
+                auth: false
+            }
+        },
+
     ]
 }
